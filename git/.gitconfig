@@ -1,0 +1,17 @@
+# .dotfiles/git/.gitconfig
+
+[user]
+    name = João M. J. Francisco
+    email = joaomarcos00512@gmail.com
+
+[core]
+    editor = nvim
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true
+
+[pull]
+    rebase = false

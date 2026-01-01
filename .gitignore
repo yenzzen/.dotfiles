@@ -1,0 +1,9 @@
+# .dotfiles/.gitignore
+
+.DS_Store
+*.swp
+*~
+.netrwhist
+
+ssh/
+*.pem
