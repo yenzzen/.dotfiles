@@ -9,17 +9,17 @@ return {
 	opts = {
 		workspaces = {
 			{
-				name = "notes",
-				path = "~/documents/notes",
+				name = "vault",
+				path = "~/Documents/Obsidian",
 			},
 		},
 		daily_notes = {
-			folder = "index",
+			folder = "01. Daily",
 			date_format = "%Y-%m-%d",
 			template = "daily_habits.md",
 		},
 		templates = {
-			folder = "templates",
+			folder = "99. System",
 			date_format = "%Y-%m-%d",
 			time_format = "%H:%M",
 		},
