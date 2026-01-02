@@ -1,0 +1,10 @@
+/* Cor de Fundo (Geralmente escura no dark mode, clara no light mode) */
+@define-color background {{colors.surface.default.hex}};
+
+/* Cor do Texto (Calculada para contrastar com o background) */
+@define-color foreground {{colors.on_surface.default.hex}};
+
+/* Cores de destaque */
+@define-color primary {{colors.primary.default.hex}};
+@define-color secondary {{colors.secondary.default.hex}};
+@define-color urgent {{colors.error.default.hex}};
