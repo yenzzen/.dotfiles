@@ -13,6 +13,8 @@ return {
 				path = "~/Documents/Obsidian",
 			},
 		},
+		notes_subdir = "00. Index",
+		new_notes_location = "notes_subdir",
 		daily_notes = {
 			folder = "01. Daily",
 			date_format = "%Y-%m-%d",
@@ -23,22 +25,19 @@ return {
 			date_format = "%Y-%m-%d",
 			time_format = "%H:%M",
 		},
-		mapping = {
-			["<leader>ol"] = {
-				action = function()
-					return require("obsidian").util.gf_passthrough()
-				end,
-				opts = { noremap = false, expr = true, buffer = true },
-			},
-			["<leader>oc"] = {
-				action = function()
-					return require("obsidian").util.toggle_checkbox()
-				end,
-				opts = { buffer = true },
-			},
+		ui = {
+			enable = false,
 		},
 	},
 	keys = {
-		{ "<leader>oo", "<cmd>ObsidianToday<cr>", desc = "Habit Tracker" },
+		{ "<leader>oo", "<cmd>ObsidianNew<CR>", desc = "To create a new note" },
+		{ "<leader>ol", "<cmd>ObsidianFollowLink<CR>", desc = "To follow a note reference under the cursor" },
+		{
+			"<leader>ot",
+			"<cmd>ObsidianNewFromTemplate<CR>",
+			desc = "To create a new note from a template in the templates folder",
+		},
+		{ "<leader>od", "<cmd>ObsidianToday<cr>", desc = "To open/create a new daily note" },
+		{ "<leader>oc", "<cmd>ObsidianToggleCheckbox<CR>", desc = "To cycle through checkbox options" },
 	},
 }

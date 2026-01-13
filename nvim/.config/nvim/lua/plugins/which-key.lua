@@ -16,12 +16,15 @@ return {
 			wk.setup(opts)
 
 			wk.add({
-				{ "<leader>f", group = "find" },
-				{ "<leader>c", group = "code" },
-				{ "<leader>e", group = "explorer" },
-				{ "<leader>g", group = "git" },
-				{ "<leader>b", group = "tabs" },
-				{ "<leader>d", group = "docker" },
+				{ "<leader>f", group = "+find", icon = "" }, -- Telescope/Find
+				{ "<leader>c", group = "+code", icon = "" }, -- Code
+				{ "<leader>e", group = "+explorer", icon = "" }, -- Explorer
+				{ "<leader>g", group = "+git", icon = "" }, -- Git
+				{ "<leader>b", group = "+tabs", icon = "" }, -- Tabs/Buffer
+				{ "<leader>d", group = "+docker", icon = "" }, -- Docker
+				{ "<leader>h", group = "+git-hunks", icon = "" }, -- Git Hunks
+				{ "<leader>o", group = "+obsidian", icon = "" }, -- Obsidian
+				{ "<leader>r", group = "+http", icon = "" }, -- Rest
 			})
 		end,
 	},

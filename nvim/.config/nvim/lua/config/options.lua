@@ -21,3 +21,4 @@ opt.updatetime = 250
 opt.timeoutlen = 300
 
 vim.opt.cmdheight = 0
+vim.opt.wildoptions = "pum"
